@@ -58,8 +58,8 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="keke_section" id="Home">
-        <h1 className="keke_title">Why Choose Keke?</h1>
+      <section className="keke_section" id="why">
+        <h1 className="keke_title" data-aos="fade-up">Why Choose Keke?</h1>
 
         <div className="keke_container">
           <img
@@ -82,11 +82,11 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="step_section" id="Home">
+      <section className="step_section" id="how" data-aos="fade-up">
         <h1 className="keke_title">How keke Works</h1>
 
-        <div className="step_container">
-          <div className="step_content" data-aos="fade-right">
+        <div className="step_container" data-aos="fade-up">
+          <div className="step_content" >
             <h3 className="step">Step 1: "Download the App"</h3>
             <p className="step_p">
               Available on Android and iOS, our app lets you book a keke in
@@ -118,35 +118,33 @@ export const Home = () => {
         <div className="download_container">
           <div className="download_section">
             <div className="download_content">
-              <h1 className="download_title">Download Keke App Today!</h1>
-              <div className="download_btn">
+              <h1 className="download_title" data-aos="fade-up">Download Keke App Today!</h1>
+              <div className="download_btn" data-aos="fade-up">
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857314/App_Store_hhhta8.svg"
                   alt=""
-                  class="download_img"
-                  data-aos="fade-left"
+              
                 />
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857316/Google_Play_nstxz1.svg"
                   alt=""
-                  class="download_img"
-                  data-aos="fade-left"
+          
                 />
               </div>
 
-              <div className="button">
+              <div className="button" data-aos="fade-up">
                 <a href="#" class="btn">
-                  {" "}
                   Start Your Journey Now
                 </a>
               </div>
+
             </div>
 
             <img
               src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857319/download_g6llgz.svg"
               alt=""
-              className="download_img"
-              data-aos="fade-left"
+              className="download_img "data-aos="fade-left"
+    
             />
           </div>
         </div>
@@ -154,12 +152,12 @@ export const Home = () => {
 
       <footer className="footer_section">
         <div className="footer">
-          <div className="footer_content">
-            <div className="footer_logo" data-aos="fade-up">
+          <div className="footer_content" data-aos="fade-up">
+            <div className="footer_logo" >
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857318/kekelogo_ww5qlb.svg"
                 alt=""
-                data-aos="fade-left"
+                data-aos="fade-up"
               />
             </div>
 
@@ -212,7 +210,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="footer_bottom">
+        <div className="footer_bottom"data-aos="fade-up">
           <p>&copy; copyright 2024, All right reserved</p>
         </div>
       </footer>
