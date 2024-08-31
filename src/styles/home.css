@@ -2,7 +2,6 @@
   background-color: #ffffff;
 }
 
-
 @font-face {
   font-family: "sOuTh Afirkas 2100";
   src: url("/src/assets/south\ afirkas\ 2100.ttf") format("truetype"); /* Fallback */
@@ -21,7 +20,7 @@
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1724856658/bg_ytc3ei.svg");
   background-position: center;
   background-size: cover;
-  height: 94vh;
+  height: 74vh;
   margin-top: 0;
   padding-bottom: 100px;
 }
@@ -44,9 +43,8 @@
   margin-bottom: 70px;
 }
 
-.text_1{
+.text_1 {
   font-family: "sOuTh Afirkas 2100", Arial, sans-serif;
-
 }
 
 .text--normal {
@@ -57,7 +55,7 @@
 .header__text {
   font-family: "sOuTh Afirkas 2100", Arial, sans-serif;
   font-size: 72px;
-  width: 70%;
+  width: 50%;
   font-style: normal;
   font-weight: 100;
   line-height: 82.79px;
@@ -92,10 +90,13 @@
   font-size: 58px;
   padding-right: 800px;
   margin-bottom: 60px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .keke_container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -103,7 +104,7 @@
 
 .keke_container img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 /* Define keyframes for the scrolling animation */
@@ -188,52 +189,6 @@
   color: #f4f4f4;
 }
 
-/* Base styles */
-.nav_item {
-  position: relative; /* Position the dropdown relative to its parent */
-}
-
-.language-selector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #f2e8e8;
-  cursor: pointer;
-  gap: 10px;
-}
-
-/* Dropdown styles */
-.dropdown {
-  position: absolute;
-  top: 100%; /* Position just below the language selector */
-  left: 0;
-  background-color: rgb(21, 20, 20);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  padding: 5px 10px;
-  margin: 0;
-  z-index: 10;
-  border-radius: 5px;
-}
-
-.dropdown-link {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-  transition: background-color 0.3s;
-}
-
-.dropdown-link:hover {
-  background-color: #484646;
-}
-
-/* Arrow rotation when dropdown is visible */
-.nav_item.show .arrow-icon {
-  transform: rotate(-135deg); /* Rotate the arrow up */
-}
-
 .download {
   padding: 90px 90px;
 }
@@ -244,7 +199,7 @@
   color: #ffffff;
   padding-bottom: 20px;
 }
-.download_btn{
+.download_btn {
   display: flex;
   gap: 10px;
   width: 100%;
@@ -258,13 +213,15 @@
 
 .download_section {
   display: flex;
-  gap: 200px;
   justify-content: space-between;
-  align-items: flex-start;
+  gap: 200px;
+  align-items: center;
   background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1724984551/download_cover_kadzn3.svg");
   border-radius: 8px;
   padding: 0 70px;
   padding-top: 50px;
+  background-position: center;
+  background-size: cover;
 }
 
 .button {
@@ -278,41 +235,49 @@
   font-weight: 700;
 }
 
-.btn{
+.btn {
   color: #f2e8e8;
 }
 
+@media screen and (max-width: 1460px) {
+  .header {
+    margin: 70px 0;
+    align-items: flex-start;
+  }
 
-@media screen and (max-width: 1260px) {
-  
+  .header__section {
+    height: 86vh;
+  }
 
+  .header__text {
+    font-size: 72px;
+    width: 70%;
+  }
 
+  .hero_image img {
+    max-width: 560px;
+    left: 50%;
+  }
 
   .step_container {
     padding-bottom: 20px;
   }
 
-  .keke_section {
-    margin-top: 150px;
-    padding: 0 16px;
-    margin-bottom: 60px;
-  }
-
   .keke_title {
-    padding-right: 20px;
-    margin-bottom: 10px;
-    font-size: 34px;
+    font-size: 58px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 1200px;
   }
 
-  /*===================================================== Step Section=================================================================*/
-  .step_section {
-    padding: 0 16px;
+  .keke_container img {
+    width: 100%;
+    max-width: 400px;
   }
 
   .step_content {
-    padding: 20px 50px;
+    padding: 50px 50px;
   }
-
 
   .step {
     font-size: 20px;
@@ -326,34 +291,31 @@
   }
 
   .step_img {
-    max-width: 550px;
-    left: 3%;
+    max-width: 650px;
+    left: 7%;
   }
 
-  
-  .download_btn img{
+  .download_btn img {
     width: 30%;
   }
 
   .download {
-    padding: 10px 16px;
-    padding-bottom: 60px;
+    padding: 100px 70px;
   }
 
   .download_section {
-    padding: 0 40px;
-    padding-top: 40px;
-    gap: 15px;
-    align-items: flex-end;
+    padding: 0 100px;
+    padding-top: 80px;
+    gap: 10px;
+    align-items: flex-start;
     padding-bottom: 30px;
   }
 
   .download_img {
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
     width: 100%;
-    top: 30px; /* Push the image out of the normal margin */
-    
+    top: 30px;
   }
 
   .download_title {
@@ -375,20 +337,125 @@
     padding: 20px;
   }
 
-  .btn{
+  .btn {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+  .header {
+    margin: 70px 0;
+    align-items: flex-start;
+  }
+
+  .header__text {
+    font-size: 68px;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
   .header__section {
-    height: 46vh;
+    height: 95vh;
   }
 
   .hero_image img {
-    max-width: 320px;
-    left: 50%; /* Push the image out of the normal margin */
+    max-width: 560px;
+    left: 50%;
+  }
 
+  .step_container {
+    padding-bottom: 20px;
+  }
+
+  .keke_title {
+    font-size: 50px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  .keke_container img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .download_section {
+    padding: 0 100px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+
+  .download_content {
+    width: 50%;
+  }
+
+  
+
+
+  
+}
+
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 70px 0;
+    align-items: flex-start;
+  }
+
+  .header__text {
+    font-size: 68px;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .header__section {
+    height: 95vh;
+  }
+
+  .hero_image img {
+    max-width: 560px;
+    left: 50%;
+  }
+
+  .step_container {
+    padding-bottom: 20px;
+  }
+
+  .keke_title {
+    font-size: 50px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  .keke_container img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .download_section {
+    padding: 0 100px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+
+  .download_content {
+    width: 50%;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  .header__section {
+    height: 56vh;
+  }
+
+  .hero_image img {
+    max-width: 420px;
   }
 
   .header__text {
@@ -399,7 +466,6 @@
 
   .header {
     padding: 0 16px;
-    align-items:flex-start;
     margin: 40px 0;
   }
 
@@ -407,6 +473,7 @@
     font-size: 16px;
     line-height: 16.1px;
     margin-bottom: 30px;
+
   }
 
   .home_title {
@@ -424,7 +491,9 @@
 
 
   .step_container {
+    flex-direction: column-reverse;
     padding-bottom: 20px;
+    gap: 30px;
   }
 
   .keke_section {
@@ -439,7 +508,6 @@
     font-size: 24px;
   }
 
-  /*===================================================== Step Section=================================================================*/
   .step_section {
     padding: 0 16px;
   }
@@ -465,77 +533,68 @@
   }
 
   .step_img {
-    max-width: 450px;
+    left: 10%; 
   }
 
-  
 
-  .download_btn{
+
+
+
+  .download_btn {
     gap: 5px;
     padding-bottom: 10px;
   }
-
-  .download_btn img{
-    width: 30%;
-  }
+  /* .download_btn img {
+    width: 40%;
+  } */
 
   .download {
-    padding: 10px 16px;
+    padding: 10px 60px;
     padding-bottom: 60px;
   }
 
   .download_section {
-    padding: 0 40px;
-    padding-top: 40px;
-    gap: 15px;
+    padding: 0 16px;
+    padding-top: 60px;
     align-items: flex-end;
     padding-bottom: 30px;
   }
 
   .download_img {
     max-width: 300px;
-    position: relative;
-    width: 100%;
-    top: 30px; /* Push the image out of the normal margin */
-    
   }
+
 
   .download_title {
     font-size: 30px;
     line-height: 33px;
     padding-bottom: 10px;
-    padding-right: 200px;
   }
 
   .footer_logo img {
     width: 60%;
   }
-  .footer_bottom p {
-    font-size: 12px;
-  }
+  
 
   .button {
     width: 200px;
     padding: 10px;
   }
 
-  .btn{
-    font-size: 14px;
-  }
+
+ 
 }
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 468px) {
   .header__section {
     height: 76vh;
   }
 
-
-
   .hero_image img {
     max-width: 320px;
-    left: 50%; /* Push the image out of the normal margin */
-
+    left: 50%;
   }
 
   .header__text {
@@ -546,7 +605,7 @@
 
   .header {
     padding: 0 16px;
-    align-items:flex-end;
+    align-items: flex-end;
     flex-direction: column;
     margin: 40px 0;
   }
@@ -592,7 +651,6 @@
     font-size: 24px;
   }
 
-  /*===================================================== Step Section=================================================================*/
   .step_section {
     padding: 0 16px;
   }
@@ -618,7 +676,7 @@
   }
 
   .step_img {
-    left: 10%; /* Push the image out of the normal margin */
+    left: 10%; 
   }
 
   .footer {
@@ -634,16 +692,14 @@
     padding-bottom: 20px;
   }
 
-  .download_btn{
+  .download_btn {
     gap: 5px;
     flex-direction: column;
     padding-bottom: 10px;
   }
-  .download_btn img{
-    width: 70%;
+  .download_btn img {
+    width: 40%;
   }
-
- 
 
   .download {
     padding: 10px 16px;
@@ -653,7 +709,6 @@
   .download_section {
     padding: 0 16px;
     padding-top: 60px;
-    gap: 15px;
     align-items: flex-end;
     padding-bottom: 30px;
   }
@@ -662,8 +717,11 @@
     max-width: 200px;
     position: relative;
     width: 100%;
-    top: 30px; /* Push the image out of the normal margin */
-    
+    top: 30px; 
+  }
+
+  .download_content {
+    width: 30%;
   }
 
   .download_title {
@@ -685,19 +743,9 @@
     padding: 10px;
   }
 
-  .btn{
+  .btn {
     font-size: 10px;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 

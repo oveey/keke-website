@@ -1,5 +1,5 @@
 .home__nav img {
-  width: 200px;
+  width: 70%;
 }
 .logo__con img {
   width: 100%;
@@ -36,7 +36,6 @@
 .nav_link {
   transition: transform 0.3s ease, color 0.3s ease;
   color: white;
-
 }
 
 .nav_link:hover {
@@ -65,9 +64,7 @@
   margin-left: 10px;
 }
 
-.language-selector{
-  display: block;
-}
+
 
 .dropdown-menu {
   position: absolute;
@@ -88,7 +85,7 @@
   background: #f0f0f0;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .home__nav {
     padding: 20px 15px;
   }
@@ -99,9 +96,15 @@
     font-weight: 400;
   }
 
-  .nav_link .language-selector{
-    display: none;
+  .nav_link {
+    color: black;
   }
+  .nav_download {
+    color: #f0f0f0;
+  }
+
+
+
 
   .home__nav button {
     position: relative;
@@ -141,8 +144,6 @@
     font-size: 10px;
   }
 
-  
-
   .home__nav img {
     width: 100px;
   }
@@ -168,4 +169,5 @@
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both transform and opacity */
     z-index: 2000;
   }
+
 }

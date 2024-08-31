@@ -118,27 +118,9 @@ export const Nav = () => {
             </ScrollLink>
           </li>
 
-          {/* <div className="dropdown">
-            <span className="colors"></span>
-          </div> */}
         </ul>
-{/* 
-        <li>
-            <div
-              className="nav_link Language_selector"
-              onClick={() => setDropdownOpen(!isDropdownOpen)}
-            >
-              <FaGlobe className="icon-left" />
-              <span className="language-text">{language}</span>
-              <FaChevronDown className="icon-right" />
-            </div>
-            {isDropdownOpen && (
-              <ul className="dropdown-menu">
-                <li onClick={() => handleLanguageChange("English")}>English</li>
-                <li onClick={() => handleLanguageChange("Pidgin")}>Pidgin</li>
-              </ul>
-            )}
-          </li> */}
+
+    
 
         <button
           className={`${isOpen ? "menu open" : "menu"}`}
