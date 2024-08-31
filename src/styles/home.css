@@ -96,9 +96,9 @@
 
 .keke_container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .keke_container img {
@@ -251,14 +251,8 @@
   padding-bottom: 40px;
 }
 
-.download_btn img{
-  max-width: 300px;
-  width: 100%;
-
-}
-
 .download_img {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
 }
 
@@ -267,7 +261,7 @@
   gap: 200px;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1724856658/bg_ytc3ei.svg");
+  background-image: url("https://res.cloudinary.com/dw3vqhvte/image/upload/v1724984551/download_cover_kadzn3.svg");
   border-radius: 8px;
   padding: 0 70px;
   padding-top: 50px;
@@ -289,7 +283,249 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1260px) {
+  
+
+
+
+  .step_container {
+    padding-bottom: 20px;
+  }
+
+  .keke_section {
+    margin-top: 150px;
+    padding: 0 16px;
+    margin-bottom: 60px;
+  }
+
+  .keke_title {
+    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 34px;
+  }
+
+  /*===================================================== Step Section=================================================================*/
+  .step_section {
+    padding: 0 16px;
+  }
+
+  .step_content {
+    padding: 20px 50px;
+  }
+
+
+  .step {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32.2px;
+  }
+
+  .step_p {
+    font-size: 18px;
+    margin: 0 0 30px;
+  }
+
+  .step_img {
+    max-width: 550px;
+    left: 3%;
+  }
+
+  
+  .download_btn img{
+    width: 30%;
+  }
+
+  .download {
+    padding: 10px 16px;
+    padding-bottom: 60px;
+  }
+
+  .download_section {
+    padding: 0 40px;
+    padding-top: 40px;
+    gap: 15px;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+
+  .download_img {
+    max-width: 400px;
+    position: relative;
+    width: 100%;
+    top: 30px; /* Push the image out of the normal margin */
+    
+  }
+
+  .download_title {
+    font-size: 50px;
+    line-height: 63px;
+    padding-bottom: 10px;
+    padding-right: 400px;
+  }
+
+  .footer_logo img {
+    width: 60%;
+  }
+  .footer_bottom p {
+    font-size: 12px;
+  }
+
+  .button {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .btn{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header__section {
+    height: 46vh;
+  }
+
+  .hero_image img {
+    max-width: 320px;
+    left: 50%; /* Push the image out of the normal margin */
+
+  }
+
+  .header__text {
+    font-size: 35px;
+    line-height: 47px;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    padding: 0 16px;
+    align-items:flex-start;
+    margin: 40px 0;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 16.1px;
+    margin-bottom: 30px;
+  }
+
+  .home_title {
+    margin-bottom: 10px;
+  }
+  .home_subtext {
+    margin-bottom: 10px;
+  }
+
+  .btn-container {
+    width: 130px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+
+  .step_container {
+    padding-bottom: 20px;
+  }
+
+  .keke_section {
+    margin-top: 150px;
+    padding: 0 16px;
+    margin-bottom: 60px;
+  }
+
+  .keke_title {
+    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  /*===================================================== Step Section=================================================================*/
+  .step_section {
+    padding: 0 16px;
+  }
+
+  .step_content {
+    padding: 20px 50px;
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 3.5;
+  }
+
+  .step {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32.2px;
+  }
+
+  .step_p {
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+
+  .step_img {
+    max-width: 450px;
+  }
+
+  
+
+  .download_btn{
+    gap: 5px;
+    padding-bottom: 10px;
+  }
+
+  .download_btn img{
+    width: 30%;
+  }
+
+  .download {
+    padding: 10px 16px;
+    padding-bottom: 60px;
+  }
+
+  .download_section {
+    padding: 0 40px;
+    padding-top: 40px;
+    gap: 15px;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+
+  .download_img {
+    max-width: 300px;
+    position: relative;
+    width: 100%;
+    top: 30px; /* Push the image out of the normal margin */
+    
+  }
+
+  .download_title {
+    font-size: 30px;
+    line-height: 33px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+  }
+
+  .footer_logo img {
+    width: 60%;
+  }
+  .footer_bottom p {
+    font-size: 12px;
+  }
+
+  .button {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .btn{
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
   .header__section {
     height: 76vh;
   }
@@ -401,6 +637,7 @@
   .download_btn{
     gap: 5px;
     flex-direction: column;
+    padding-bottom: 10px;
   }
   .download_btn img{
     width: 70%;
@@ -417,10 +654,16 @@
     padding: 0 16px;
     padding-top: 60px;
     gap: 15px;
+    align-items: flex-end;
+    padding-bottom: 30px;
   }
 
   .download_img {
-    width: 70%;
+    max-width: 200px;
+    position: relative;
+    width: 100%;
+    top: 30px; /* Push the image out of the normal margin */
+    
   }
 
   .download_title {
@@ -446,3 +689,15 @@
     font-size: 10px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+

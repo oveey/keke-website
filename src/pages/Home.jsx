@@ -141,7 +141,7 @@ export const Home = () => {
             </div>
 
             <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857319/download_g6llgz.svg"
+              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724984587/Downloadkeke_iku4ej.svg"
               alt=""
               className="download_img "data-aos="fade-left"
     

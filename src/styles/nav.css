@@ -34,8 +34,9 @@
 }
 
 .nav_link {
-  color: rgba(255, 255, 255, 0.85);
   transition: transform 0.3s ease, color 0.3s ease;
+  color: white;
+
 }
 
 .nav_link:hover {
@@ -87,16 +88,19 @@
   background: #f0f0f0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .home__nav {
     padding: 20px 15px;
   }
 
   .home__nav a {
-    color: #000000;
     z-index: 2000;
     font-size: 20px;
     font-weight: 400;
+  }
+
+  .nav_link .language-selector{
+    display: none;
   }
 
   .home__nav button {
@@ -125,6 +129,10 @@
     width: 30px; /* Default width for lines */
     margin: 4px 0; /* Space between lines */
   }
+
+  /* .nav_link .langauge_select li{
+    display: none;
+  } */
 
   .open {
     /* display: flex !important; */
