@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import { FaGlobe, FaChevronDown } from 'react-icons/fa';
+import { FaGlobe, FaChevronDown } from "react-icons/fa";
 import "../styles/nav.css";
 
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
 
-  const [language, setLanguage] = useState('English');
+  const [language, setLanguage] = useState("English");
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLanguageChange = (lang) => {
@@ -23,7 +23,6 @@ export const Nav = () => {
     //   // Change content to English
     // }
   };
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -65,7 +64,7 @@ export const Nav = () => {
         </RouterLink>
 
         <ul className={`${isOpen ? "open" : ""}`}>
-          <li>
+          <li className="nav">
             <ScrollLink
               to="how"
               smooth={true}
@@ -76,8 +75,7 @@ export const Nav = () => {
               how does it work?
             </ScrollLink>
           </li>
-
-          <li>
+          <li className="nav">
             <ScrollLink
               to="why"
               smooth={true}
@@ -89,7 +87,7 @@ export const Nav = () => {
             </ScrollLink>
           </li>
 
-          <li>
+          <li className="language-selector-wrapper">
             <div
               className="nav_link Language_selector"
               onClick={() => setDropdownOpen(!isDropdownOpen)}
@@ -105,8 +103,7 @@ export const Nav = () => {
               </ul>
             )}
           </li>
-
-          <li>
+          <li className="nav">
             <ScrollLink
               to="contact"
               smooth={true}
@@ -117,10 +114,7 @@ export const Nav = () => {
               DOWNLOAD APP
             </ScrollLink>
           </li>
-
         </ul>
-
-    
 
         <button
           className={`${isOpen ? "menu open" : "menu"}`}
@@ -130,8 +124,6 @@ export const Nav = () => {
           <span className="line middle"></span>
           <span className="line bottom"></span>
         </button>
-
-        
       </div>
     </>
   );

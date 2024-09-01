@@ -44,22 +44,22 @@ export const Home = () => {
                 </div>
               </ScrollLink>
             </div>
-
-
           </div>
           <div className="/" data-aos="fade-up" data-aos-duration="3000">
-              <div className="hero_image">
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857317/keke_hero_cxu1s9.svg"
-                  alt=""
-                />
-              </div>
+            <div className="hero_image">
+              <img
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857317/keke_hero_cxu1s9.svg"
+                alt=""
+              />
             </div>
+          </div>
         </div>
       </section>
 
       <section className="keke_section" id="why">
-        <h1 className="keke_title" data-aos="fade-up">Why Choose Keke?</h1>
+        <h1 className="keke_title" data-aos="fade-up">
+          Why Choose Keke?
+        </h1>
 
         <div className="keke_container">
           <img
@@ -86,7 +86,7 @@ export const Home = () => {
         <h1 className="keke_title">How keke Works</h1>
 
         <div className="step_container" data-aos="fade-up">
-          <div className="step_content" >
+          <div className="step_content">
             <h3 className="step">Step 1: "Download the App"</h3>
             <p className="step_p">
               Available on Android and iOS, our app lets you book a keke in
@@ -115,45 +115,42 @@ export const Home = () => {
       </section>
 
       <section className="download">
-        <div className="download_container">
-          <div className="download_section">
-            <div className="download_content">
-              <h1 className="download_title" data-aos="fade-up">Download Keke App Today!</h1>
-              <div className="download_btn" data-aos="fade-up">
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857314/App_Store_hhhta8.svg"
-                  alt=""
-              
-                />
-                <img
-                  src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857316/Google_Play_nstxz1.svg"
-                  alt=""
-          
-                />
-              </div>
-
-              <div className="button" data-aos="fade-up">
-                <a href="#" class="btn">
-                  Start Your Journey Now
-                </a>
-              </div>
-
+        <div className="download_section">
+          <div className="download_content">
+            <h1 className="download_title" data-aos="fade-up">
+              Download Keke App Today!
+            </h1>
+            <div className="download_btn" data-aos="fade-up">
+              <img
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857314/App_Store_hhhta8.svg"
+                alt=""
+              />
+              <img
+                src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857316/Google_Play_nstxz1.svg"
+                alt=""
+              />
             </div>
 
-            <img
-              src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724984587/Downloadkeke_iku4ej.svg"
-              alt=""
-              className="download_img "data-aos="fade-left"
-    
-            />
+            <div className="button" data-aos="fade-up">
+              <a href="#" class="btn">
+                Start Your Journey Now
+              </a>
+            </div>
           </div>
+
+          <img
+            src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857319/download_g6llgz.svg"
+            alt=""
+            className="download_img "
+            data-aos="fade-left"
+          />
         </div>
       </section>
 
       <footer className="footer_section">
         <div className="footer">
           <div className="footer_content" data-aos="fade-up">
-            <div className="footer_logo" >
+            <div className="footer_logo">
               <img
                 src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857318/kekelogo_ww5qlb.svg"
                 alt=""
@@ -164,43 +161,27 @@ export const Home = () => {
             <p>Contact Us</p>
 
             <div className="socials" data-aos="fade-up">
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857316/instagram_trwxcb.svg"
                   alt=""
                 />
               </a>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857319/linkedin_yhmilk.svg"
                   alt=""
                 />
               </a>
 
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857320/tiktok_gbmjwt.svg"
                   alt=""
                 />
               </a>
 
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://res.cloudinary.com/dw3vqhvte/image/upload/v1724857322/twitter_qq1e2b.svg"
                   alt=""
@@ -210,7 +191,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="footer_bottom"data-aos="fade-up">
+        <div className="footer_bottom" data-aos="fade-up">
           <p>&copy; copyright 2024, All right reserved</p>
         </div>
       </footer>
