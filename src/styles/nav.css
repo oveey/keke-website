@@ -18,6 +18,8 @@
   background-color: transparent;
   backdrop-filter: blur(3px);
 }
+
+
 .nav_download {
   background-color: #cb8806;
   padding: 16px;
@@ -182,6 +184,7 @@
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+
   }
   
   /* Hamburger button styling */
